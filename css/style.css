@@ -1,0 +1,304 @@
+body {
+    font-family: Open Sans, sans-serif;
+    font-weight: 100;
+}
+
+.wrapper {
+    margin:                                 0 auto;
+    width:                                  1000px;
+    position:                               relative;
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        margin:                             0 auto;
+        width:                              100%;
+        position:                           relative;
+    }
+}
+
+header {
+    position:                               fixed;
+    z-index:                                10;
+    width:                                  100%;
+    height:                                     44px;
+    background:                             #515151; /* Old browsers */
+    background:                             -moz-linear-gradient(top,  #515151 0%, #424242 100%); /* FF3.6+ */
+    background:                             -webkit-gradient(linear, left top, left bottom, color-stop(0%,#515151), color-stop(100%,#424242)); /* Chrome,Safari4+ */
+    background:                              -webkit-linear-gradient(top,  #515151 0%,#424242 100%); /* Chrome10+,Safari5.1+ */
+    background:                              -o-linear-gradient(top,  #515151 0%,#424242 100%); /* Opera 11.10+ */
+    background:                             -ms-linear-gradient(top,  #515151 0%,#424242 100%); /* IE10+ */
+    background:                              linear-gradient(to bottom,  #515151 0%,#424242 100%); /* W3C */
+    filter:                                 progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#424242',GradientType=0 ); /* IE6-9 */    
+    -webkit-box-shadow:                     0px 0px 12px rgba(0, 0, 0, 1);
+    -moz-box-shadow:                        0px 0px 12px rgba(0, 0, 0, 1);
+    box-shadow:                             0px 0px 12px rgba(0, 0, 0, 1);
+}
+@media (max-width: 1020px) {
+    header .wrapper {
+        padding: 0 10px;
+    }
+}
+
+
+header .searchBox {
+   position:                                relative;
+   float:                                   right;
+}
+
+header .searchBox #search {
+color: #f7f7f7;
+font-family: Open Sans, sans-serif;
+font-weight: 100;
+background: rgba(0, 0, 0, 0.22);
+margin-top: 4px;
+width: 300px;
+height: 14px;
+padding: 10px 10px 10px 40px;
+border: 0;
+border-radius: 3px;
+box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.28);
+}
+
+header .searchBox #search:focus {
+    outline: none;
+}
+
+header .searchBox form {
+    height: 44px;
+    background-image: url(../img/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+header #logotype {
+position: absolute;
+width: 131px;
+height: 44px;
+left: 0;
+top: 0;
+}
+
+
+header #logotype a {
+    text-indent:                            -9999px;
+    position:                               absolute;
+    top:                                    6px;
+    width:                                  131px;
+    height:                                 35px;
+    background:                             url(../img/Searchdagram.png);
+}
+
+@media (max-width: 1020px) {
+    header .searchBox {
+        margin-right: 20px;
+    }
+    
+    header #logotype {
+        left: 10px;
+    }
+}
+
+/* */
+
+article {
+    padding-top: 50px;
+}
+
+
+@media (max-width: 1020px) {
+    article {
+        padding: 50px 10px 10px 10px;
+    }
+}   
+/*                   */
+
+
+#errorBox {
+    border-radius: 5px;
+    background: #f7f7f7;
+    padding: 1px 0 20px 0;
+    margin-top: 20px;
+}
+
+#errorBox p#error {
+    font-size: 1.3em;
+}
+#errorBox p {
+    padding: 0 20px;
+}
+
+.instagram-object:nth-child(4n-3) {
+margin-left: 0;
+}
+
+.instagram-object {
+    width: 23.8%;
+}
+
+.instagram-object {
+    background: black;
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+    position: relative;
+}
+
+.instagram-data {
+    width:  100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.instagram-object .instagram-data img {
+    width: 30px;
+    height: auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.instagram-data a.image-url {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:  100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.instagram-data span.user {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.1em;
+    line-height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 45px;
+}
+
+.instagram-data span.user-avatar {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+@media (max-width: 800px) {
+    .instagram-object {
+        width: 32.2%;
+    }
+    
+    .instagram-object:nth-child(3n-2) {
+        margin-left: 0;
+    }
+    
+    .instagram-object:nth-child(3n-1), .instagram-object:nth-child(3n) {
+        margin-left: 1.6%;
+    }
+}
+
+@media (max-width: 600px) {
+    .instagram-object {
+        width: 49.2%;
+    }
+    
+    .instagram-object:nth-child(2n-1) {
+        margin-left: 0;
+    }
+    
+    .instagram-object:nth-child(2n) {
+        margin-left: 1.6%;
+    }
+}
+
+@media (max-width: 300px) {
+    .instagram-object {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+}
+
+
+.instagram-object > img {
+        width: 100%;
+        height: auto;
+}
+
+.instagram-object > a:hover > img {
+    opacity: 0.3;
+}
+
+.instagram-object:hover .instagram-data {
+    opacity: 1;
+}
+
+/* Footer */
+
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    clear: both;
+    margin-top: 20px;
+}
+
+footer a {
+cursor: pointer;
+background: #f7f7f7;
+padding: 10px;
+border: 1px solid rgb(226, 226, 226);
+border-radius: 3px;
+}
+
+footer a:hover {
+cursor: pointer;
+background: rgb(197, 197, 197);
+padding: 10px;
+border: 1px solid rgb(153, 152, 152);
+border-radius: 3px;
+}
+
+/* Loading */
+
+div.spinner {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 40px;
+    }
+    
+    div.spinner div {
+    width: 12%;
+    height: 26%;
+    background: #000;
+    position: absolute;
+    left: 44.5%;
+    top: 37%;
+    opacity: 0;
+    -webkit-animation: fade 1s linear infinite;
+    -webkit-border-radius: 50px;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    }
+    
+    div.spinner div.bar1 {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+    div.spinner div.bar2 {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+    div.spinner div.bar3 {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+    div.spinner div.bar4 {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+    div.spinner div.bar5 {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+    div.spinner div.bar6 {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+    div.spinner div.bar7 {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+    div.spinner div.bar8 {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+    div.spinner div.bar9 {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+    div.spinner div.bar10 {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+    div.spinner div.bar11 {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+    div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+
+     @-webkit-keyframes fade {
+      from {opacity: 1;}
+      to {opacity: 0.25;}
+    }
