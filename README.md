@@ -3,4 +3,6 @@
 
 A simple implementation of an image search tool using Instragram's API and jQuery.
 
+Made for a project at university
+
 
